@@ -1,0 +1,25 @@
+{
+  "name": "validate.js-array",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jon Lauridsen",
+  "scripts": {
+    "test": "mocha",
+    "coverage": "istanbul cover --dir ./.coverage _mocha --include-all-sources -- -R spec",
+    "coveralls": "istanbul cover --dir ./.coverage _mocha --include-all-sources --report lcovonly -- -R spec && cat ./.coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./.coverage"
+  },
+  "dependencies": {
+    "lodash": "^4.3.0"
+  },
+  "peerDependencies": {
+    "validate.js": "~0.9.0"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.6",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.3.4",
+    "mocha-lcov-reporter": "^1.0.0",
+    "must": "^0.13.1",
+    "validate.js": "^0.9.0"
+  }
+}
