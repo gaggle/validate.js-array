@@ -1,6 +1,7 @@
 # validate.js-array
 [![Build Status](https://travis-ci.org/gaggle/validate.js-array.svg?branch=master)](https://travis-ci.org/gaggle/validate.js-array)
 [![Coverage Status](https://coveralls.io/repos/github/gaggle/validate.js-array/badge.svg?branch=master)](https://coveralls.io/github/gaggle/validate.js-array?branch=master)
+[![Dependency Status](https://david-dm.org/gaggle/validate.js-array.svg)](https://david-dm.org/gaggle/validate.js-array)
 
 `array` validation plugin for [validate.js](http://validatejs.org).
 
@@ -20,4 +21,3 @@ Use:
     validate({foo: [{invalid: "data"}]}, this.schema)
     // => { foo: [ 'Foo element [{"invalid":"data"}] does not validate:
             [{"bar":["Bar can\'t be blank"]}]' ] }
-
